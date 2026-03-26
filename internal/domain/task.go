@@ -8,7 +8,7 @@ type Task struct {
 	Header      string
 	Description string
 	Assignee    string
-	Position    int32
+	Position    int64
 	CreatedAt   time.Time
 	UpdatedAt   time.Time
 }
