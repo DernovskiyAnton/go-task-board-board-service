@@ -7,7 +7,7 @@ import (
 )
 
 type BoardRepository interface {
-	Create(ctx context.Context, board domain.Board) error
+	Create(ctx context.Context, board domain.Board) (domain.Board, error)
 
 	GetByID(ctx context.Context, id string) (domain.Board, error)
 
